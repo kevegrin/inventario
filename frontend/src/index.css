@@ -1,0 +1,26 @@
+/* index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+/* Reset default margin and padding to ensure consistent layout across browsers */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure that html and body take up the full height of the screen */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Make sure the body has no extra padding/margin */
+body {
+  margin: 0;
+  padding: 0;
+}
+

@@ -1,0 +1,31 @@
+/* App.css */
+
+/* Reset any unwanted margin and padding from body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* Material-UI default font */
+  }
+  
+  /* Style for the App */
+  .App {
+    background-color: #f4f4f4; /* Light background color for the app */
+    padding: 20px; /* Add some padding for layout spacing */
+  }
+  
+  /* Header Style when using a sticky AppBar */
+  .MuiAppBar-root {
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    background-color: #3f51b5; /* Your primary color */
+    z-index: 1000; /* Make sure it's on top of other content */
+    box-shadow: 0 4px 2px -2px gray; /* Optional: adds a shadow for better visual */
+  }
+  
+  /* Optional: Custom styles for h1 (headings) */
+  h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  
