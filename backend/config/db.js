@@ -5,12 +5,12 @@ const mongoose = require("mongoose");
 
 // Este es el URI (Uniform Resource Identifier) para MongoDB.
 // Se obtiene de las variables de entorno (dotenv) o se utiliza una URI predeterminada.
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://kevinpellegrin:gyS0LHp9pnCAQDqr@ihc.yfeto.mongodb.net/inventario?retryWrites=true&w=majority';
+// debug const mongoURI = process.env.MONGO_URI || 'mongodb+srv://kevinpellegrin:gyS0LHp9pnCAQDqr@ihc.yfeto.mongodb.net/inventario?retryWrites=true&w=majority';
 
 const connectDB = async () => {
   try {
     // Conexión a la base de datos de MongoDB usando el URI proporcionado
-    const connection = await mongoose.connect(mongoURI);
+    const connection = await mongoose.connect(process.env.MONGO_URI);
 
     // Imprime el nombre de la base de datos si la conexión fue exitosa
     console.log(`MongoDB connected to database: ${connection.connection.name}`);
