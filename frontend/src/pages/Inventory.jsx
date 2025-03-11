@@ -37,7 +37,7 @@ const Inventory = () => {
 
   return (
     <div>
-      <h1>Inventory Management</h1>
+      <h1>Inventario</h1>
       <Grid2 container spacing={3}>
         {inventoryItems.map((item) => (
           <Grid2 key={item._id} xs={12} sm={6} md={4}>

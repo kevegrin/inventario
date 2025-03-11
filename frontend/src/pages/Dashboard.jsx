@@ -5,8 +5,8 @@ import React from 'react';
 const Dashboard = () => {
   return (
     <div>
-      <h1>Dashboard</h1>
-      <p>Welcome to the Inventory Management System!</p>
+      <h1>Reservas 6J</h1>
+      <p>chISTE + IC = amigos; simio no mata simio</p>
     </div>
   );
 };

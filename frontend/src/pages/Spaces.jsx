@@ -4,8 +4,8 @@ import React from 'react';
 const Spaces = () => {
   return (
     <div>
-      <h1>Spaces</h1>
-      <p>Manage the available spaces for reservations here.</p>
+      <h1>Espacios</h1>
+      <p>Labs / talleres / salones / audiovisual. WIP</p>
     </div>
   );
 };

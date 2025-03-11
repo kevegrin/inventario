@@ -8,9 +8,10 @@ const Navigation = () => {
   return (
     <AppBar position="sticky">
       <Toolbar>
-        <Button color="inherit" component={Link} to="/">Dashboard</Button>
-        <Button color="inherit" component={Link} to="/inventory">Inventory</Button>
-        <Button color="inherit" component={Link} to="/spaces">Spaces</Button>
+        <Button color="inherit" component={Link} to="/">Home</Button>
+        <Button color="inherit" component={Link} to="/inventory">Inventario</Button>
+        <Button color="inherit" component={Link} to="/spaces">Espacios</Button>
+        <Button color="inherit" component={Link} to= "/reserve">Reservar</Button>
       </Toolbar>
     </AppBar>
   );

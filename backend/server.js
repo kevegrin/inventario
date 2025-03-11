@@ -21,6 +21,9 @@ const PORT = process.env.PORT || 5000;
 
 connectDB();
 
+const inventoryReservationRoutes = require('./routes/inventoryReservationRoutes');
+const spaceReservationRoutes = require('./routes/spaceReservationRoutes');
+
 // middleware (para poder usar request y response en las rutas)
 app.use(express.json());
 app.use(cors({
@@ -29,14 +32,21 @@ app.use(cors({
   credentials: true
 }));
 
-app.use(cors()); 
 
 // rutas ejemplo
 app.get("/", (req, res) => res.send("API running"));
 
-// rutas reales
+// rutas reales (api)
 app.use("/api/inventory", require("./routes/inventoryRoutes"));
 app.use("/api/spaces", require("./routes/spaceRoutes"));
+app.use('/api/inventoryReservations', inventoryReservationRoutes);
+app.use('/api/spaceReservations', spaceReservationRoutes);
+
+// por si se rompe: 
+app.use((err, req, res, next) => {
+    console.error(err.stack);
+    res.status(500).send('Something went wrong!');
+  });
 
 // empezar server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
